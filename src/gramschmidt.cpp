@@ -3,8 +3,8 @@
 
 void gramschmidt(const Matrix<float>& a, Matrix<float>& b)	//b is the orthogonalized matrix
 {
-    int noofbasis = a.getCols();
-    int ineachbasis = a.getRows();
+    int noofbasis = a.getRows();
+    int ineachbasis = a.getCols();
     
     float dot = 0;
     for(int i=0; i<noofbasis; ++i)
